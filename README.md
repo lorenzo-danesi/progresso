@@ -4,4 +4,4 @@ Olá :wave: Esse repositório é destinado ao compartilhamento de progresso e de
 A baixo segue uma lista com todas as atividades realizadas:
 
 - Indrodução ao Git e ao GitHub
-- **Desafio**: Aprendendo POO na prática
+- Desafio: [Aprendendo POO na prática](https://github.com/lorenzo-danesi/progresso/tree/master/bootcamp-poo)
