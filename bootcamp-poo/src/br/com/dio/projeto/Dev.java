@@ -1,5 +1,6 @@
 package br.com.dio.projeto;
 
+import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -10,6 +11,21 @@ public class Dev {
     private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
     //o mesmo é válido para os conteúdos que já concluiu
 
+    public void inscreverBootcamp(Bootcamp bootcamp){
+        this.conteudosInscritos.addAll(bootcamp.getConteudos());
+        bootcamp.getDevsInscritos().add(this);
+    }
+
+    public double calcularTotalXp() {
+        Iterator<Conteudo> iterator = this.conteudosConcluidos.iterator();
+        double soma = 0;
+        while(iterator.hasNext()){
+            double next = iterator.next().calcularXp();
+            soma += next;
+        }
+        return soma;
+    }    
+    
     public String getNome() {
         return nome;
     }
