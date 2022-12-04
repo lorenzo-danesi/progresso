@@ -24,5 +24,11 @@ public class Curso extends Conteudo{
                 ", cargaHoraria=" + cargaHoraria +
                 '}';
     }
+
+    public void setTitulo(String string) {
+    }
+
+    public void setDescricao(String string) {
+    }
     
 }

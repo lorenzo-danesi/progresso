@@ -26,6 +26,12 @@ public class Mentoria extends Conteudo{
                 ", data=" + data +
                 '}';
     }
+
+    public void setTitulo(String string) {
+    }
+
+    public void setDescricao(String string) {
+    }
     
 
     
